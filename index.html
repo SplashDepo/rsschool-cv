@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700;900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet" />
+    <title>CV</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <nav class="menu">
+            <ul class="menu_list">
+              <li class="list_item">
+                <a href="#" class="link nav_btn">About Me</a>
+              </li>
+              <li class="list_item">
+                <a href="#" class="link nav_btn">Skills</a>
+              </li>
+              <li class="list_item">
+                <a href="#" class="link nav_btn">Code example</a>
+              </li>
+              <li class="list_item">
+                <a href="#" class="link nav_btn">Education</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <section class="intro">
+          <div class="container">
+            <div class="intro_flex_wrap">
+              <div class="avatar">
+                <img src="assets/img/avatar.jpg" alt="man with a snake" />
+              </div>
+              <div class="intro_body">
+                <h1 class="titel intro__titel">Vladislav Ilyushin</h1>
+                <div class="contacts">
+                  <h2 class="contacts_titel section_titel">Contacts</h2>
+                  <ul class="contacts_list">
+                    <li class="contacts_list_item">
+                      <a href="mailto:Splashsnik@gmail.com" class="email_link">Splashsnik@gmail.com</a>
+                    </li>
+                    <li class="contacts_list_item">
+                      <a href="https://discordapp.com/users/SplashSnik#4196" class="dicord_link">SplashSnik#4196</a>
+                    </li>
+                    <li class="contacts_list_item">
+                      <a href="https://t.me/SplashSnik" class="telegram_link">Splash</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="inner">
+          <div class="container">
+            <div class="inner_flex_wrap">
+              <div class="skills">
+                <h2 class="skills_titel section_titel">Skills</h2>
+                <ul class="skills_list">
+                  <li class="skills_list_item">JavaScript</li>
+                  <li class="skills_list_item">HTML</li>
+                  <li class="skills_list_item">CSS</li>
+                  <li class="skills_list_item">Git</li>
+                </ul>
+              </div>
+              <div class="education">
+                <h2 class="education_titel section_titel">Education</h2>
+                <ul class="education_list">
+                  <li class="education_list_item">
+                    ITVDN
+                    <ul class="itvdn_courses_list">
+                      <li class="courses_item">js</li>
+                      <li class="courses_item">git</li>
+                      <li class="courses_item">html &amp; css</li>
+                    </ul>
+                  </li>
+                  <li class="education_list_item">HTMLAcademy</li>
+                  <li class="education_list_item">FreeCodeCamp</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+  </body>
 </html>
