@@ -8,9 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700;900&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/an-old-hope.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
     <title>CV</title>
   </head>
   <body>
@@ -88,6 +91,34 @@
                   <li class="education_list_item">HTMLAcademy</li>
                   <li class="education_list_item">FreeCodeCamp</li>
                 </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="code_example">
+          <div class="container">
+            <h2 class="code_example_titel">Code example</h2>
+            <div class="code_example_flex_wrap">
+              <div class="description_task">
+                <h3 class="description_task_titel">Bingo (Or Not) codewars kata:</h3>
+                <p class="description_task_text term">For this game of BINGO, you will receive a single array of 10 numbers from 1 to 26 as an input. Duplicate numbers within the array are possible.</p>
+                <p class="description_task_text">
+                  Each number corresponds to their alphabetical order letter <br />
+                  (e.g. 1 = A. 2 = B, etc). Write a function where you will win the game if your numbers can spell “BINGO”. They do not need to be in the right order in the input array. Otherwise you will lose. Your outputs should be “WIN” or “LOSE” respectively.
+                </p>
+              </div>
+              <div class="example">
+                <pre class="decor_elem">
+                  <code id="hljs" class="language-javascript hljs">
+   function bingo(value) {
+     let arr = [2, 9, 14, 7, 15];
+     for (let i = 0; i < arr.length; i++) {
+       if (!value.includes(arr[i])) return 'LOSE';
+      }
+      return 'WIN';
+    }
+                  </code>
+                </pre>
               </div>
             </div>
           </div>
