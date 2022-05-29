@@ -358,6 +358,105 @@ img {
   height: 50%;
 }
 
+/* !!! Section About Me !!! ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.about {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.about_titel {
+  position: absolute;
+  top: -25px;
+  left: 30px;
+  padding: 4px 12px;
+  background-color: #c8acbe;
+}
+
+.about_titel::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -3px;
+  right: -2.5px;
+  width: 100%;
+  height: 3.5px;
+  background-color: #bb9eb1;
+  transform: skewX(60deg);
+}
+.about_titel::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 1.7px;
+  right: -5.3px;
+  width: 6px;
+  height: 100.2%;
+  background-color: #bb9eb1;
+  transform: skewY(35deg);
+}
+.about_flex_wrap {
+  display: flex;
+  padding: 40px 0;
+  justify-content: space-around;
+  column-gap: 30px;
+}
+.about_me {
+  flex: 0 1 50%;
+  position: relative;
+  padding: 30px 0;
+  background: #8f9ed6;
+  text-align: center;
+}
+.about_me::after {
+  position: absolute;
+  bottom: -7px;
+  right: -5px;
+  content: "";
+  height: 7px;
+  width: 100%;
+  background: #828fbe;
+  display: block;
+  transform: skewX(60deg);
+}
+.about_me::before {
+  position: absolute;
+  top: 3px;
+  right: -10px;
+  content: "";
+  height: 100.5%;
+  width: 10px;
+  background: #828fbe;
+  display: block;
+  transform: skewY(35deg);
+}
+
+.about_me_text {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+.languages {
+  flex: 0 1 25%;
+  align-self: center;
+  text-align: center;
+  border-radius: 28px;
+  border: 1px solid black;
+}
+.languages_titel {
+  background-color: yellow;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+}
+.lang_list {
+  padding: 20px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+.lang_list_item {
+}
+
 /* !!! FOOTER !!!++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 .footer {
