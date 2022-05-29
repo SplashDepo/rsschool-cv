@@ -357,3 +357,32 @@ img {
   width: 37.8%;
   height: 50%;
 }
+
+/* !!! FOOTER !!!++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.footer {
+}
+.footer_flex_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.git_author_link {
+}
+.git_icon {
+  display: block;
+  width: 100px;
+}
+.rs_school_link {
+}
+.rs_icon {
+  display: block;
+  width: 120px;
+}
+
+time {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
