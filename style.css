@@ -15,11 +15,11 @@ code {
 body {
   font-family: "Space Mono", monospace;
   font-weight: 400;
-  background: url(./assets/img/1625628916_22-kartinkin-com-p-veb-pank-fon-krasivie-foni-23.jpg), url(./assets/img/AdobeStock_376947189_Preview.jpeg);
-  background-repeat: no-repeat, no-repeat;
-  background-position: left 0px top 0px, right 0px top 0px;
-  background-size: 60% 1000px, 900px 750px;
-  min-height: 1500px;
+  background: url(./assets/img/1625628916_22-kartinkin-com-p-veb-pank-fon-krasivie-foni-23.jpg), url(./assets/img/AdobeStock_376947189_Preview.jpeg), url(./assets/img/1625628916_22-kartinkin-com-p-veb-pank-fon-krasivie-foni-23.jpg), url(./assets/img/AdobeStock_369858162_Preview.jpeg);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: left 0px top 0px, right 0px top 0px, right 0px bottom 0px, bottom 0px left 0px;
+  background-size: 60% 890px, 900px 750px, 60% 750px, 45% 650px;
+  height: 100%;
 }
 
 a {
@@ -32,6 +32,12 @@ ol {
   list-style-type: none;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -41,9 +47,6 @@ ol {
 }
 
 /* !!! HEADER !!! ++++++++++++++++++++++++++++++++++++++++++++++ */
-
-.wrapper {
-}
 .header {
   margin: 20px 0 20px 0;
 }
@@ -53,10 +56,19 @@ ol {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
+  padding: 24px 0;
 }
 .list_item {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px 10px;
+  background-color: rgb(184, 137, 180);
+  border: 2px solid rgb(184, 137, 180);
 }
+.list_item:hover {
+  background-color: rgba(185, 158, 184, 0.7);
+}
+
 .link {
 }
 
@@ -69,6 +81,7 @@ ol {
 /* !!! INTRO SECTION !!! +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 .main {
+  flex: 1 1 auto;
 }
 
 .intro {
@@ -162,12 +175,43 @@ img {
 .contacts_list {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 600;
+  padding-left: 28px;
 }
 .contacts_list_item {
   font-size: 20px;
+  position: relative;
+}
+.contacts_list_item:nth-child(1)::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 3px;
+  left: -37px;
+  background: url(./assets/icons/contact_icons/free-icon-gmail-281769.png) no-repeat;
+}
+.contacts_list_item:nth-child(2)::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: -3px;
+  left: -37px;
+  background: url(./assets/icons/contact_icons/iconfinder-discord-4661587_122459.png) no-repeat;
+  background-size: 28px 28px;
+}
+
+.contacts_list_item:nth-child(3)::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -3px;
+  left: -37px;
+  background: url(./assets/icons/contact_icons/pngwing.com.png);
 }
 .contacts_list_item:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .email_link {
 }
@@ -299,6 +343,8 @@ img {
   position: absolute;
   top: -15px;
   right: 100px;
+  padding: 3px 10px;
+  background-color: rgb(218, 161, 161);
 }
 
 .code_example_flex_wrap {

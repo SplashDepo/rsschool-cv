@@ -23,16 +23,16 @@
           <nav class="menu">
             <ul class="menu_list">
               <li class="list_item">
-                <a href="#" class="link nav_btn">About Me</a>
+                <a href="#about_section" class="link nav_btn">About Me</a>
               </li>
               <li class="list_item">
-                <a href="#" class="link nav_btn">Skills</a>
+                <a href="#skills_block" class="link nav_btn">Skills</a>
               </li>
               <li class="list_item">
-                <a href="#" class="link nav_btn">Code example</a>
+                <a href="#code_section" class="link nav_btn">Code example</a>
               </li>
               <li class="list_item">
-                <a href="#" class="link nav_btn">Education</a>
+                <a href="#education_block" class="link nav_btn">Education</a>
               </li>
             </ul>
           </nav>
@@ -68,7 +68,7 @@
         <section class="inner">
           <div class="container">
             <div class="inner_flex_wrap">
-              <div class="skills">
+              <div class="skills" id="skills_block">
                 <h2 class="skills_titel section_titel">Skills</h2>
                 <ul class="skills_list">
                   <li class="skills_list_item">JavaScript</li>
@@ -77,7 +77,7 @@
                   <li class="skills_list_item">Git</li>
                 </ul>
               </div>
-              <div class="education">
+              <div class="education" id="education_block">
                 <h2 class="education_titel section_titel">Education</h2>
                 <ul class="education_list">
                   <li class="education_list_item">
@@ -95,7 +95,7 @@
             </div>
           </div>
         </section>
-        <section class="code_example">
+        <section class="code_example" id="code_section">
           <div class="container">
             <h2 class="code_example_titel">Code example</h2>
             <div class="code_example_flex_wrap">
@@ -112,7 +112,7 @@
                   <code id="hljs" class="language-javascript hljs">
    function bingo(value) {
      let arr = [2, 9, 14, 7, 15];
-     for (let i = 0; i < arr.length; i++) {
+     for (let i = 0; i &lt; arr.length; i++) {
        if (!value.includes(arr[i])) return 'LOSE';
       }
       return 'WIN';
@@ -123,7 +123,7 @@
             </div>
           </div>
         </section>
-        <section class="about">
+        <section class="about" id="about_section">
           <div class="container">
             <div class="about_flex_wrap">
               <div class="about_me">
