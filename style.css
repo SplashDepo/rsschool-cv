@@ -1,0 +1,533 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+pre {
+  padding: 0;
+  margin: 0;
+}
+code {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  background: url(./assets/img/1625628916_22-kartinkin-com-p-veb-pank-fon-krasivie-foni-23.jpg), url(./assets/img/AdobeStock_376947189_Preview.jpeg), url(./assets/img/1625628916_22-kartinkin-com-p-veb-pank-fon-krasivie-foni-23.jpg), url(./assets/img/AdobeStock_369858162_Preview.jpeg);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: left 0px top 0px, right 0px top 0px, right 0px bottom 0px, bottom 0px left 0px;
+  background-size: 60% 890px, 900px 750px, 60% 750px, 45% 650px;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+  background-color: rgba(160, 158, 190, 0.7);
+  position: relative;
+}
+
+/* !!! HEADER !!! ++++++++++++++++++++++++++++++++++++++++++++++ */
+.header {
+  margin: 20px 0 20px 0;
+}
+.menu {
+}
+.menu_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0;
+}
+.list_item {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px 10px;
+  background-color: rgb(184, 137, 180);
+  border: 2px solid rgb(184, 137, 180);
+}
+.list_item:hover {
+  background-color: rgba(185, 158, 184, 0.7);
+}
+
+.link {
+}
+
+.list_item:not(:last-child) {
+  margin-right: 45px;
+}
+.nav_btn {
+}
+
+/* !!! INTRO SECTION !!! +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.main {
+  flex: 1 1 auto;
+}
+
+.intro {
+  margin-bottom: 20px;
+}
+.intro_flex_wrap {
+  display: flex;
+  column-gap: 50px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+.avatar {
+}
+img {
+  display: block;
+  width: 322px;
+}
+.intro_body {
+}
+.titel {
+}
+.intro__titel {
+  margin-bottom: 50px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+}
+.contacts {
+  background-color: pink;
+  position: relative;
+  padding: 30px 20px 20px;
+  box-shadow: 17px 18px 7px -8px rgba(34, 60, 80, 0.08);
+  position: relative;
+}
+.contacts::after {
+  position: absolute;
+  bottom: -7px;
+  right: -5px;
+  content: "";
+  height: 7px;
+  width: 100%;
+  background-color: rgb(233, 166, 177);
+  display: block;
+  transform: skewX(60deg);
+}
+.contacts::before {
+  position: absolute;
+  top: 3px;
+  right: -10px;
+  content: "";
+  height: 100.5%;
+  width: 10px;
+  background-color: rgb(233, 166, 177);
+  display: block;
+  transform: skewY(35deg);
+}
+.contacts_titel {
+  position: absolute;
+  top: -20px;
+  left: -15px;
+  padding: 0 10px;
+  background-color: rgb(156, 218, 156);
+}
+
+.contacts_titel::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -3px;
+  right: -2.5px;
+  width: 100%;
+  height: 3.5px;
+  background-color: rgb(146, 190, 146);
+  transform: skewX(60deg);
+}
+.contacts_titel::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 1.7px;
+  right: -5.3px;
+  width: 6px;
+  height: 100.2%;
+  background-color: rgb(146, 190, 146);
+  transform: skewY(35deg);
+}
+
+.section_titel {
+}
+.contacts_list {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  padding-left: 28px;
+}
+.contacts_list_item {
+  font-size: 20px;
+  position: relative;
+}
+.contacts_list_item:nth-child(1)::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 3px;
+  left: -37px;
+  background: url(./assets/icons/contact_icons/free-icon-gmail-281769.png) no-repeat;
+}
+.contacts_list_item:nth-child(2)::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: -3px;
+  left: -37px;
+  background: url(./assets/icons/contact_icons/iconfinder-discord-4661587_122459.png) no-repeat;
+  background-size: 28px 28px;
+}
+
+.contacts_list_item:nth-child(3)::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -3px;
+  left: -37px;
+  background: url(./assets/icons/contact_icons/pngwing.com.png);
+}
+.contacts_list_item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.email_link {
+}
+.dicord_link {
+}
+.telegram_link {
+}
+
+/* !!! Inner Section !!! +++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.inner {
+}
+.inner_flex_wrap {
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+  padding: 30px 0;
+}
+.skills {
+  border: 1px solid black;
+  background-color: #cdb7fb;
+  position: relative;
+  border-radius: 30px;
+  flex: 0 1 35%;
+  box-shadow: 25px 19px 10px -4px rgba(34, 60, 80, 0.2);
+}
+.skills_titel {
+  background-color: yellow;
+  text-align: center;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.section_titel {
+}
+.skills_list {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  padding: 20px 20px 20px 50px;
+  font-size: 20px;
+}
+.skills_list_item {
+  position: relative;
+}
+.skills_list_item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.skills_list_item:nth-child(1)::before {
+  content: "";
+  background: url(./assets/icons/js.png) no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  left: -30px;
+}
+.skills_list_item:nth-child(2)::before {
+  content: "";
+  background: url(./assets/icons/html-5.png) no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  left: -30px;
+}
+
+.skills_list_item:nth-child(3)::before {
+  content: "";
+  background: url(./assets/icons/css-3.png) no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  left: -30px;
+}
+
+.skills_list_item:nth-child(4)::before {
+  content: "";
+  background: url(./assets/icons/github.png) no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  left: -30px;
+}
+
+.education {
+  border: 1px solid black;
+  position: relative;
+  flex: 0 1 35%;
+  border-radius: 30px;
+  background-color: #e1e7f2;
+  box-shadow: 25px 19px 10px -4px rgba(34, 60, 80, 0.35);
+}
+.education_titel {
+  background-color: yellow;
+  text-align: center;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.education_list {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  padding: 20px 30px 20px;
+  font-size: 20px;
+}
+.education_list_item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.itvdn_courses_list {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 20px;
+}
+.courses_item {
+}
+.courses_item:not(:last-child) {
+  margin-bottom: 7px;
+}
+
+/* !!! Code Example Sectioun !!! ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.code_example {
+  margin: 35px 0 20px;
+}
+.code_example_titel {
+  position: absolute;
+  top: -15px;
+  right: 100px;
+  padding: 3px 10px;
+  background-color: rgb(218, 161, 161);
+}
+
+.code_example_flex_wrap {
+  display: flex;
+  padding: 30px 0 25px 0;
+  justify-content: space-around;
+}
+.description_task {
+  flex: 0 1 44%;
+}
+.description_task_titel {
+  margin-bottom: 15px;
+}
+.description_task_text {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+.term {
+  margin-bottom: 15px;
+}
+.example {
+  align-self: flex-end;
+}
+.language-javascript {
+}
+.hljs {
+}
+
+#hljs {
+  padding: 6px;
+  position: relative;
+  z-index: 100;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.decor_elem::before {
+  content: "";
+  position: absolute;
+  top: 31.5%;
+  right: 3.8%;
+  z-index: 1;
+  background-color: rgb(245, 155, 155);
+  width: 37.8%;
+  height: 53%;
+  /* border: 1px solid #fff; */
+}
+
+.decor_elem::after {
+  content: "";
+  position: absolute;
+  top: 39.4%;
+  right: 2%;
+  background-color: rgb(230, 142, 142);
+  width: 37.8%;
+  height: 50%;
+}
+
+/* !!! Section About Me !!! ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.about {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.about_titel {
+  position: absolute;
+  top: -25px;
+  left: 30px;
+  padding: 4px 12px;
+  background-color: #c8acbe;
+}
+
+.about_titel::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -3px;
+  right: -2.5px;
+  width: 100%;
+  height: 3.5px;
+  background-color: #bb9eb1;
+  transform: skewX(60deg);
+}
+.about_titel::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 1.7px;
+  right: -5.3px;
+  width: 6px;
+  height: 100.2%;
+  background-color: #bb9eb1;
+  transform: skewY(35deg);
+}
+.about_flex_wrap {
+  display: flex;
+  padding: 40px 0;
+  justify-content: space-around;
+  column-gap: 30px;
+}
+.about_me {
+  flex: 0 1 50%;
+  position: relative;
+  padding: 30px 0;
+  background: #8f9ed6;
+  text-align: center;
+}
+.about_me::after {
+  position: absolute;
+  bottom: -7px;
+  right: -5px;
+  content: "";
+  height: 7px;
+  width: 100%;
+  background: #828fbe;
+  display: block;
+  transform: skewX(60deg);
+}
+.about_me::before {
+  position: absolute;
+  top: 3px;
+  right: -10px;
+  content: "";
+  height: 100.5%;
+  width: 10px;
+  background: #828fbe;
+  display: block;
+  transform: skewY(35deg);
+}
+
+.about_me_text {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+.languages {
+  flex: 0 1 25%;
+  align-self: center;
+  text-align: center;
+  border-radius: 28px;
+  border: 1px solid black;
+}
+.languages_titel {
+  background-color: yellow;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+}
+.lang_list {
+  padding: 20px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+.lang_list_item {
+}
+
+/* !!! FOOTER !!!++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.footer {
+}
+.footer_flex_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.git_author_link {
+}
+.git_icon {
+  display: block;
+  width: 100px;
+}
+.rs_school_link {
+}
+.rs_icon {
+  display: block;
+  width: 120px;
+}
+
+time {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
