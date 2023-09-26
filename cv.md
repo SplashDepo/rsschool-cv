@@ -2,8 +2,8 @@
 
 ### Contacts
 
-**Discord:** SplashDepo
-**Telegram:** @spl333
+**Discord:** SplashDepo\
+**Telegram:** @spl333\
 **Email:** Splashsnik@gmail.com
 
 ## About me
